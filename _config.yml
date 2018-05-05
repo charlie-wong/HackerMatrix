@@ -1,0 +1,13 @@
+title: HackerMatrix theme
+description: HackerMatrix is a theme for Jekyll!
+
+destination: build
+
+exclude:
+    - script/
+    - README.md
+
+sass:
+    style: compressed
+
+#theme: HackerMatrix
