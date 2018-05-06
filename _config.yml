@@ -4,6 +4,8 @@ project:
     description: HackerMatrix is a theme for Jekyll!
     repository: gkide
 
+collections_dir: collections
+
 collections:
     docs:
         output: true

@@ -1,7 +1,7 @@
 ---
 layout: docs
-title: Getting Started
-permalink: /docs
+title: Startup
+permalink: /docs/welcome
 ---
 
 ### Introduction

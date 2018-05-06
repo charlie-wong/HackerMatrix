@@ -1,31 +1,8 @@
 <ul>
-{% comment %}
-    {% for user in site.collections %}
-        {{ user.output }}--wlc<br>
-        {% for item in user.docs %}
-            {{ item.url }}--xx<br>
-        {% endfor %}
-    {% endfor %}
-
-    {% for user in site.docs %}
-        {{ user.path }}--123<br>
-        {{ user.collection }}--abc<br>
-        {{ user.title }}--xyz<br>
-    {% endfor %}
-{% endcomment %}
-
 {% for item in include.items %}
-    {% assign item_url = item | prepend: "/docs/" | append:"/" %}
+    {% assign item_url = item | prepend: "/docs/" %}
     {% assign p = site.docs | where:"url", item_url | first %}
-{% comment %}
-    item=[{{item}}]<br>
-    iurl=[{{item_url}}]<br>
-    purl=[{{p.url}}]<br>
-    pgrl=[{{page.url}}]<br>
-    pgtt=[{{page.title}}]<br>
-{% endcomment %}
-    <li class="{% if item_url == page.url %}current{% endif %}">
-        <a href="{{ p.url | prepend: site.github.url }}">{{ p.title }}</a>
-    </li>
+
+    <a href="{{ p.url | site.github.url }}">{{ p.title }}</a>
 {% endfor %}
 </ul>
