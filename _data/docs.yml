@@ -1,0 +1,23 @@
+- title: Welcome
+  docs:
+  - welcome
+  - installation
+
+- title: User
+  docs:
+  - todo
+
+- title: Plugins
+  docs:
+  - todo
+
+- title: Developer
+  docs:
+  - doxygen
+
+- title: Miscellaneous
+  docs:
+  - help
+  - contributing
+  - whatdoyouwant
+  - troubleshooting

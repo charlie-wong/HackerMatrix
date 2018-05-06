@@ -1,0 +1,38 @@
+<footer>
+    <div class="footer">
+        <div class="grid" style="padding: 0 20px 0 20px; margin: 0 0 0 0;">
+            <div class="unit one-third align-left">
+                <p>The contents are under
+                    <a href="{{ '/blob/master/LICENSE' | site.github.repository_url }}" 
+                       style="text-transform: uppercase; text-decoration:none;">
+                        {{ site.github.license.key }} &copy; {{ site.time | date: '%Y' }}
+                    </a>
+                </p>
+            </div>
+
+            <div class="unit one-third">
+                <div class="unit whole" align="center" style="margin-top: 6px;">
+                    <img src="{{ '/assets/images/os-windows-48x48.png' | site.github.url }}"
+                         width="25" height="25" style="margin-right: 0px;margin-left: 0px;" alt="Windows">
+                    <img src="{{ '/assets/images/os-linux-48x48.png' | site.github.url }}"
+                         width="25" height="25" style="margin-right: 3px; margin-left: 3px;" alt="Linux">
+                    <img src="{{ '/assets/images/os-apple-48x48.png' | site.github.url }}"
+                         width="25" height="25" style="margin-left: 0px" alt="MacOSX">
+                </div>
+            </div>
+
+            <div class="unit one-third align-right">
+                <p> Proudly hosted by
+                    <a href="https://github.com" style="text-decoration:none;">
+                        <img src="{{ '/assets/images/github.png' | site.github.url }}" 
+                             width="60" height="15" alt="GitHub • Social coding">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div style="text-align: center; padding-top: 3px; font-style: italic; font-size: 75%; padding-bottom: 3px;">
+    Latest update at {{site.time}}
+</div>

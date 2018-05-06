@@ -1,0 +1,19 @@
+<header>
+<div class="grid">
+    <div class="unit one-eight align-center">
+        <section id="header_logo">
+            <img src="{{ site.project.logo | site.github.url }}"
+                 width="120" height="120">
+        </section>
+    </div>
+    <div class="unit seven-eights">
+            <h1>{{ site.project.name | default: site.github.repository_name }}</h1>
+            <h2>{{ site.project.description | default: site.github.project_tagline }}</h2>
+            <nav class="primary-nav align-left">
+                {% include primary-nav.html %}
+            </nav>
+    </div>
+</div>
+</header>
+
+
